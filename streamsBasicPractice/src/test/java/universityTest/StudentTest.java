@@ -1,5 +1,8 @@
+package universityTest;
+
 import org.junit.Before;
 import org.junit.Test;
+import university.Student;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,8 +12,9 @@ public class StudentTest {
 
     @Before
     public void before() {
-        this.student = new Student("Richard");
-        this.student.setAttendancePercent((short) 74);
+        this.student = new Student();
+        this.student.setName("Richard");
+        this.student.setAttendancePercent(74);
         this.student.setDegreeTopic("geography");
         this.student.setAverageGrade('b');
     }

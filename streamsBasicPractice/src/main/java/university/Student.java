@@ -1,3 +1,5 @@
+package university;
+
 public class Student {
 
     private String name;
@@ -5,7 +7,10 @@ public class Student {
     private String degreeTopic;
     private char averageGrade;
 
-    public Student(String name) {
+    public Student() {
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -14,7 +19,7 @@ public class Student {
         return this.name;
     }
 
-    public void setAttendancePercent(short number) {
+    public void setAttendancePercent(int number) {
         // should really check if between 0 and 100 inclusive and raise exception if not
         // or code that sends value to this has such a check so no need here, as long as that's the case.
 
